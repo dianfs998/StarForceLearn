@@ -67,7 +67,12 @@
     <Compile Include="Assets\GameFramework\Scripts\Runtime\DataTable\LoadDataTableSuccessEventArgs.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\DataTable\LoadDataTableUpdateEventArgs.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Debugger\DebuggerActiveWindowType.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Debugger\DebuggerComponent.ConsoleWindow.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Debugger\DebuggerComponent.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadAgentHelperBase.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadComponent.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadStartEventArgs.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadUpdateEventArgs.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Event\EventComponent.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Resource\LoadResourceAgentHelperBase.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Resource\ReadWritePathType.cs" />
@@ -85,7 +90,6 @@
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Utility\Helper.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Utility\UnityExtension.cs" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
-    <Compile Include="Assets\GameFramework\Scripts\Runtime\Debugger\DebuggerComponent.ConsoleWindow.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -108,10 +112,10 @@
       <HintPath>D:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="GameFramework">
-      <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+      <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
