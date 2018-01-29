@@ -75,7 +75,40 @@
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadStartEventArgs.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadSuccessEventArgs.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\DownloadUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Download\UnityWebRequestDownloadedAgentHelper.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\AttachEntityInfo.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\DefaultEntityGroupHelper.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\DefaultEntityHelper.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\Entity.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\EntityComponent.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\EntityComponent.EntityGroup.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\EntityGroupHelperBase.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\EntityHelperBase.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\EntityLogic.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\HideEntityCompleteEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\ShowEntityDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\ShowEntityFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\ShowEntityInfo.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\ShowEntitySuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Entity\ShowEntityUpdateEventArgs.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Event\EventComponent.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Fsm\FsmComponent.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\DefaultLocationaryHelper.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LoadDictionaryDependencyAssetEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LoadDictionaryFailureEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LoadDictionaryInfo.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LoadDictionarySuccessEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LoadDictionaryUpdateEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LocalizationComponent.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Localization\LocalizationHelperBase.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkClosedEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkComponent.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkConnectedEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkCustomErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkErrorEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkMissHeartBeatEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\Network\NetworkSendPacketEventArgs.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Runtime\ObjectPool\ObjectPoolComponent.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Resource\LoadResourceAgentHelperBase.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Resource\ReadWritePathType.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Runtime\Resource\ResourceCheckCompleteEventArgs.cs" />
@@ -114,10 +147,10 @@
  <HintPath>D:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="GameFramework">
- <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+ <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+ <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
