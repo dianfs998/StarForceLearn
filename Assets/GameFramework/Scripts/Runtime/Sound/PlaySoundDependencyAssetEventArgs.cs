@@ -4,17 +4,17 @@ using GameFramework.Sound;
 namespace UnityGameFramework.Runtime
 {
     /// <summary>
-    /// 播放声音失败事件
+    /// 播放声音时加载依赖资源事件
     /// </summary>
-    public sealed class PlaySoundFailureEventArgs : GameEventArgs
+    public sealed class PlaySoundDependencyAssetEventArgs : GameEventArgs
     {
         /// <summary>
-        /// 播放声音失败事件编号
+        /// 播放声音时加载依赖资源事件编号
         /// </summary>
-        private static readonly int EventId = typeof(PlaySoundFailureEventArgs).GetHashCode();
+        private static readonly int EventId = typeof(PlaySoundDependencyAssetEventArgs).GetHashCode();
 
         /// <summary>
-        /// 获取播放声音失败事件编号
+        /// 获取播放声音时加载依赖资源事件编号
         /// </summary>
         public override int Id
         {
@@ -42,19 +42,24 @@ namespace UnityGameFramework.Runtime
         public PlaySoundParams PlaySoundParams { get; private set; }
 
         /// <summary>
+        /// 获取被加载的依赖资源名称
+        /// </summary>
+        public string DependencyAssetName { get; private set; }
+
+        /// <summary>
+        /// 获取当前已加载依赖资源数量
+        /// </summary>
+        public int LoadedCount { get; private set; }
+
+        /// <summary>
+        /// 获取总共加载依赖资源数量
+        /// </summary>
+        public int TotalCount { get; private set; }
+
+        /// <summary>
         /// 获取声音绑定的实体
         /// </summary>
         public Entity BindingEntity { get; private set; }
-
-        /// <summary>
-        /// 获取错误码
-        /// </summary>
-        public PlaySoundErrorCode ErrorCode { get; private set; }
-
-        /// <summary>
-        /// 获取错误信息
-        /// </summary>
-        public string ErrorMessage { get; private set; }
 
         /// <summary>
         /// 获取用户自定义数据
@@ -62,7 +67,7 @@ namespace UnityGameFramework.Runtime
         public object UserData { get; private set; }
 
         /// <summary>
-        /// 清理播放声音失败事件
+        /// 清理播放声音时加载依赖资源事件
         /// </summary>
         public override void Clear()
         {
@@ -70,26 +75,28 @@ namespace UnityGameFramework.Runtime
             SoundAssetName = default(string);
             SoundGroupName = default(string);
             PlaySoundParams = default(PlaySoundParams);
+            DependencyAssetName = default(string);
+            LoadedCount = default(int);
+            TotalCount = default(int);
             BindingEntity = default(Entity);
-            ErrorCode = default(PlaySoundErrorCode);
-            ErrorMessage = default(string);
             UserData = default(object);
         }
 
         /// <summary>
-        /// 填充播放声音失败事件
+        /// 填充播放声音时加载依赖资源事件
         /// </summary>
         /// <param name="e">内部事件</param>
-        /// <returns>播放声音失败事件</returns>
-        public PlaySoundFailureEventArgs Fill(GameFramework.Sound.PlaySoundFailureEventArgs e)
+        /// <returns>播放声音时加载依赖资源事件</returns>
+        public PlaySoundDependencyAssetEventArgs Fill(GameFramework.Sound.PlaySoundDependencyAssetEventArgs e)
         {
             PlaySoundInfo playSoundInfo = (PlaySoundInfo)e.UserData;
             SerialId = e.SerialId;
             SoundAssetName = e.SoundAssetName;
             SoundGroupName = e.SoundGroupName;
             PlaySoundParams = e.PlaySoundParams;
-            ErrorCode = e.ErrorCode;
-            ErrorMessage = e.ErrorMessage;
+            DependencyAssetName = e.DependencyAssetName;
+            LoadedCount = e.LoadedCount;
+            TotalCount = e.TotalCount;
             BindingEntity = playSoundInfo.BindingEntity;
             UserData = playSoundInfo.UserData;
 
