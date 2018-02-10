@@ -140,6 +140,9 @@
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Setting\DefaultSettingHelper.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Setting\SettingComponent.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Setting\SettingHelperBase.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\DefaultSoundAgentHelper.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\DefaultSoundGroupHelper.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\DefaultSoundHelper.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\PlaySoundDependencyAssetEventArgs.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\PlaySoundFailureEventArgs.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\PlaySoundInfo.cs" />
@@ -147,12 +150,16 @@
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\PlaySoundUpdateEventArgs.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\SoundAgentHelperBase.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\SoundComponent.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\SoundComponent.SoundGroup.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\SoundGroupHelperBase.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\SoundHelperBase.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\UI\UIForm.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\UI\UIFormHelperBase.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\UI\UIFormLogic.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Runtime\UI\UIGroupHelperBase.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Utility\Helper.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Runtime\Utility\UnityExtension.cs" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
-    <Compile Include="Assets\GameFramework\Scripts\Runtime\Sound\SoundComponent.SoundGroup.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -181,6 +188,7 @@
       <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
