@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarForceLearn", "Assembly-CSharp.csproj", "{A05022DE-28F6-E4D2-B3A0-99BB19ACCCA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarForceLearn", "Assembly-CSharp-Editor.csproj", "{2FF5D793-B38A-38E2-4CC2-99269FB0703B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{A05022DE-28F6-E4D2-B3A0-99BB19ACCCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A05022DE-28F6-E4D2-B3A0-99BB19ACCCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A05022DE-28F6-E4D2-B3A0-99BB19ACCCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF5D793-B38A-38E2-4CC2-99269FB0703B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF5D793-B38A-38E2-4CC2-99269FB0703B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF5D793-B38A-38E2-4CC2-99269FB0703B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF5D793-B38A-38E2-4CC2-99269FB0703B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,7 +24,7 @@ namespace UnityGameFramework.Runtime
         private bool m_EditorResourceMode = true;
 
         [SerializeField]
-        private Language m_EditorLaguage = Language.Unspecified;
+        private Language m_EditorLanguage = Language.Unspecified;
 
         [SerializeField]
         private string m_LogHelperTypeName = "UnityGameFramework.Runtime.LogHelper";
@@ -82,8 +82,8 @@ namespace UnityGameFramework.Runtime
         /// </summary>
         public Language EditorLanguage
         {
-            get { return m_EditorLaguage; }
-            set { m_EditorLaguage = value; }
+            get { return m_EditorLanguage; }
+            set { m_EditorLanguage = value; }
         }
 
         /// <summary>
@@ -183,7 +183,7 @@ namespace UnityGameFramework.Runtime
             GameEntry.Shutdown(ShutdownType.Quit);
 #endif
 #if UNITY_5_6_OR_NEWER
-            Application.lowMemory -= OnLowMemory;
+            Application.lowMemory += OnLowMemory;
 #endif
         }
 
@@ -347,7 +347,17 @@ namespace UnityGameFramework.Runtime
         {
             Log.Info("Low memory reported...");
 
-            //todo
+            ObjectPoolComponent objectPoolComponent = GameEntry.GetComponent<ObjectPoolComponent>();
+            if (objectPoolComponent != null)
+            {
+                objectPoolComponent.ReleaseAllUnused();
+            }
+
+            ResourceComponent resourceComponent = GameEntry.GetComponent<ResourceComponent>();
+            if(resourceComponent != null)
+            {
+                resourceComponent.ForceUnloadUnusedAsset(true);
+            }
         }
     }
 }

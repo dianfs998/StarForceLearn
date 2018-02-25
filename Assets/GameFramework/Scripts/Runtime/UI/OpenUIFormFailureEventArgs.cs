@@ -50,9 +50,34 @@ namespace UnityGameFramework.Runtime
         /// </summary>
         public object UserData { get; private set; }
 
+        /// <summary>
+        /// 清理打开界面失败事件
+        /// </summary>
         public override void Clear()
         {
-            throw new System.NotImplementedException();
+            SerialId = default(int);
+            UIFormAssetName = default(string);
+            UIGroupName = default(string);
+            PauseCoveredUIForm = default(bool);
+            ErrorMessage = default(string);
+            UserData = default(object);
+        }
+
+        /// <summary>
+        /// 填充打开界面失败事件
+        /// </summary>
+        /// <param name="e">内部事件</param>
+        /// <returns>打开界面失败事件</returns>
+        public OpenUIFormFailureEventArgs Fill(GameFramework.UI.OpenUIFormFailureEventArgs e)
+        {
+            SerialId = e.SerialId;
+            UIFormAssetName = e.UIFormAssetName;
+            UIGroupName = e.UIGroupName;
+            PauseCoveredUIForm = e.PauseCoveredUIForm;
+            ErrorMessage = e.ErrorMessage;
+            UserData = e.UserData;
+
+            return this;
         }
     }
 }

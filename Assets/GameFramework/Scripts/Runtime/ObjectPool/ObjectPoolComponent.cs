@@ -38,9 +38,9 @@ namespace UnityGameFramework.Runtime
         /// 获取对象池数量
         /// </summary>
         /// <returns></returns>
-        public int Count()
+        public int Count
         {
-            return m_ObjectPoolManager.Count;
+            get { return m_ObjectPoolManager.Count; }
         }
 
         /// <summary>
@@ -134,6 +134,16 @@ namespace UnityGameFramework.Runtime
         public ObjectPoolBase[] GetAllObjectPools()
         {
             return m_ObjectPoolManager.GetAllObjectPools();
+        }
+
+        /// <summary>
+        /// 获取所有对象池
+        /// </summary>
+        /// <param name="sort">是否根据对象池的优先级排序</param>
+        /// <returns>所有对象池</returns>
+        public ObjectPoolBase[] GetAllObjectPools(bool sort)
+        {
+            return m_ObjectPoolManager.GetAllObjectPools(sort);
         }
 
         /// <summary>
