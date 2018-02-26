@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzer.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzerController.cs" />
+     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\IBuildEventHandler.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleCollection\Asset.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleCollection\AssetBundle.cs" />
      <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleCollection\AssetBundleCollection.cs" />
@@ -142,29 +143,14 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/Program Files/Unity2017/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions">
- <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="GameFramework">
- <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+ <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Common">
- <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
