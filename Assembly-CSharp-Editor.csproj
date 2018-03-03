@@ -54,8 +54,13 @@
   <ItemGroup>
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzer.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzerController.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderConfigPathAttribute.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetBundleCode.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetBundleData.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetData.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.BuildReport.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.VersionListData.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\BuildAssetBundle.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\IBuildEventHandler.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleCollection\Asset.cs" />
@@ -93,10 +98,6 @@
     <Compile Include="Assets\GameFramework\Scripts\Editor\Mics\OpenFolder.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\Mics\Type.cs" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
-    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetBundleData.cs" />
-    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetData.cs" />
-    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.BuildReport.cs" />
-    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.VersionListData.cs" />
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
