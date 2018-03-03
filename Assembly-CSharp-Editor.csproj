@@ -54,6 +54,9 @@
   <ItemGroup>
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzer.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzerController.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetsOrder.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\DependencyData.cs" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\ScatteredAssetOrder.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderConfigPathAttribute.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetBundleCode.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleBuilder\AssetBundleBuilderController.AssetBundleData.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="Assets\GameFramework\Scripts\Editor\Mics\OpenFolder.cs" />
     <Compile Include="Assets\GameFramework\Scripts\Editor\Mics\Type.cs" />
     <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
+    <Compile Include="Assets\GameFramework\Scripts\Editor\AssetBundleAnalyzer\AssetBundleAnalyzerController.Stamp.cs" />
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/Program Files/Unity2017/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -152,29 +156,14 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>D:/Program Files/Unity2017/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions">
-      <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="GameFramework">
-      <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+      <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>F:/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>D:/Program Files/Unity2017/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>D:/UnityProject/UnityTest/StarForceLearn/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -61,10 +61,38 @@ namespace UnityGameFramework.Editor.AssetBundleTools
             };
 
             m_AssetBundleAnalyzerController = new AssetBundleAnalyzerController(m_AssetBundleCollection);
+
+            m_AssetBundleAnalyzerController.OnAnalyzingAsset += delegate (int index, int count)
+            {
+                if (OnAnalyzingAsset != null)
+                {
+                    OnAnalyzingAsset(index, count);
+                }
+            };
+
+            m_AssetBundleAnalyzerController.OnAnalyzeCompleted += delegate ()
+            {
+                if (OnAnalyzeCompleted != null)
+                {
+                    OnAnalyzeCompleted();
+                }
+            };
+
+            m_AssetBundleDatas = new SortedDictionary<string, AssetBundleData>();
+            m_VersionListDatas = new Dictionary<BuildTarget, VersionListData>();
+            m_BuildReport = new BuildReport();
+
+            m_BuildEventHandleTypeNames = new List<string>() { NoneOptionName };
+            m_BuildEventHandleTypeNames.AddRange(Type.GetEditorTypeNames(typeof(IBuildEventHandler)));
+            m_BuildEventHandler = null;
+
+
         }
 
         public event GameFrameworkAction<int, int> OnLoadingAssetBundle = null;
         public event GameFrameworkAction<int, int> OnLoadingAsset = null;
         public event GameFrameworkAction OnLoadCompleted = null;
+        public event GameFrameworkAction<int, int> OnAnalyzingAsset = null;
+        public event GameFrameworkAction OnAnalyzeCompleted = null;
     }
 }

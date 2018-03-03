@@ -101,7 +101,7 @@ namespace UnityGameFramework.Editor.AssetBundleTools
 
 			public void AddCode(BuildTarget buildTarget, int length, int hashCode, int zipLength, int zipHashCode)
             {
-                m_Codes.Add(new AssetBundleCode(BuildTarget, length, hashCode, zipLength, zipHashCode));
+                m_Codes.Add(new AssetBundleCode(buildTarget, length, hashCode, zipLength, zipHashCode));
             }
         }
     }
